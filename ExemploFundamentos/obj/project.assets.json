@@ -8,26 +8,24 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Murilo\\.nuget\\packages\\": {}
+    "C:\\Users\\user\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Murilo\\Documents\\GitHub\\dotNetDiome\\ExemploFundamentos\\ExemploFundamentos.csproj",
+      "projectUniqueName": "C:\\Users\\user\\OneDrive\\Documentos\\GitHub\\dotNetDiome\\ExemploFundamentos\\ExemploFundamentos.csproj",
       "projectName": "ExemploFundamentos",
-      "projectPath": "C:\\Users\\Murilo\\Documents\\GitHub\\dotNetDiome\\ExemploFundamentos\\ExemploFundamentos.csproj",
-      "packagesPath": "C:\\Users\\Murilo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Murilo\\Documents\\GitHub\\dotNetDiome\\ExemploFundamentos\\obj\\",
+      "projectPath": "C:\\Users\\user\\OneDrive\\Documentos\\GitHub\\dotNetDiome\\ExemploFundamentos\\ExemploFundamentos.csproj",
+      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\user\\OneDrive\\Documentos\\GitHub\\dotNetDiome\\ExemploFundamentos\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Murilo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
