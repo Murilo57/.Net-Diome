@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace .Net-Diome.ExemploFundamentos
+namespace dotNetDiome.ExemploFundamentos
 {
-        public class Pessoa
-{
-    public string Nome { get; set; }
-    public int Idade { get; set; }
-
-    public void Apresentar()
+            public class Pessoa
     {
-        Console.WriteLine($"Olá, meu nome é {Nome}, e tenho {Idade} anos ");
+        public string Nome { get; set; }
+        public int Idade { get; set; }
+
+        public void Apresentar()
+        {
+            Console.WriteLine($"Olá, meu nome é {Nome} e tenho {Idade} anos ");
+        }
     }
-}
 }
