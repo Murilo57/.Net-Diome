@@ -1,0 +1,5 @@
+C:\Users\Murilo\Documents\Github\dotNetDiome\Estacionamento\obj\Debug\net8.0\Estacionamento.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Murilo\Documents\Github\dotNetDiome\Estacionamento\obj\Debug\net8.0\Estacionamento.AssemblyInfoInputs.cache
+C:\Users\Murilo\Documents\Github\dotNetDiome\Estacionamento\obj\Debug\net8.0\Estacionamento.AssemblyInfo.cs
+C:\Users\Murilo\Documents\Github\dotNetDiome\Estacionamento\obj\Debug\net8.0\Estacionamento.csproj.CoreCompileInputs.cache
+C:\Users\Murilo\Documents\Github\dotNetDiome\Estacionamento\obj\Debug\net8.0\Estacionamento.sourcelink.json
