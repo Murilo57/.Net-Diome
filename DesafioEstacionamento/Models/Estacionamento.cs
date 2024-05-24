@@ -1,46 +1,59 @@
 ﻿using System;
 
-namespace DesafioEstacionamento.Models
+namespace DesafioEstacionamento.Models;
+public class Estacionamento
 {
-    public class Estacionamento
+    private decimal valorPorHora;
+    private List<string> veiculos = new List<string>();
+
+    public Estacionamento(decimal valorPorHora)
     {
-        double valorPorHora = 10;
-        double tempoEstacionado = 0;
-        string Placa = "";
-        List<string> veiculos = new List<string>();
+        this.valorPorHora = valorPorHora;
+    }
 
-        public Estacionamento(double valorPorHora, double tempoEstacionado, string Placa)
+    public void CadastrarVeiculo()
+    {
+        Console.WriteLine("Digite a placa do veiculo que ira estacionar: ");
+        string Placas = Console.ReadLine()!;
+        veiculos.Add(Placas);
+        Console.WriteLine("Veiculo cadastrado com sucesso!");
+    }
+
+    public void RemoverVeiculo()
+    {
+        Console.WriteLine("Digite a placa do veículo para remover:");
+        string placa = "";
+        placa = Console.ReadLine()!;
+
+        if (veiculos.Any(x => x.Equals(placa, StringComparison.CurrentCultureIgnoreCase)))
         {
-            this.valorPorHora = valorPorHora;
-            this.tempoEstacionado = tempoEstacionado;
-            this.Placa = Placa;
+            Console.WriteLine("Quantas tempo estacionado?: ");
+
+            int horas = 0;
+            decimal valorTotal = 0;
+
+            horas = int.Parse(Console.ReadLine());         
+
+            veiculos.Remove(placa);
+
+            Console.WriteLine($"O veículo {placa} foi removido e o preço total foi de: R$ {valorTotal}");
         }
-
-        public CadastrarVeiculos(novaPlaca Placa)
+        else
         {
-            Console.WriteLine("Digite a placa:");
-            novaPlaca = Console.ReadLine();
-            if (novaPlaca <> "");
-            {
-                veiculos.Add(novaPlaca);
-                Console.WriteLine("Carro cadastrado com sucesso!");
-            }
-            else
-            {
-                Console.WriteLine("Erro ao cadastrar placa.");
-            }
-            
-            
-        }
-
-        public RemoverVeiculos()
-        {
-            Console.WriteLine("Digite a placa do veiculo que ira sair: ");
-            string veiculoSaida = Console.ReadLine();
-            if (veiculos.Any(x => x.ToUpper() == veiculoSaida.ToUpper()))
-            {
-                double horasEstacionado = ReadLine("Quanto tempo estacionado?: ");
-            }
+            Console.WriteLine("Desculpe, esse veículo não está estacionado aqui. Confira se digitou a placa corretamente");
         }
     }
+
+    public void ListarVeiculos()
+    {
+        Console.WriteLine("Veiculos estacionados:");
+        int qtdeVeiculos = 0;
+
+        foreach(string veiculo in veiculos)
+        {
+            Console.WriteLine(Convert.ToString(veiculo));
+            qtdeVeiculos++;
+        }        
+    }
+
 }

@@ -2,10 +2,10 @@
 
 
 
-Estacionamento es = new Estacionamento(2, 5);
+Estacionamento es = new Estacionamento(2);
 
 string opcao = string.Empty;
-bool exibirMeny = true;
+bool exibirMenu = true;
 
 while (exibirMenu)
 {
@@ -25,9 +25,12 @@ while (exibirMenu)
         case "2":
             es.RemoverVeiculo();
             break;
-
-        default:
-            Console.WriteLine("Opção inválida");
+        case "3":
+            es.ListarVeiculos();
+            break;
+        case "4":
+            Console.WriteLine("Encerrado!");
+            Environment.Exit(0);
             break;
 
     }
